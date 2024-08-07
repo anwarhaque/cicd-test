@@ -10,7 +10,7 @@ const apiRouter = express.Router();
 
 apiRouter.get('/api', (req, res)=>{
     try {
-        return res.status(200).json({message:'api working'})
+        return res.status(200).json({message:'CICD API WORKING'})
     } catch (error) {
         return res.status(500).json({message:error.message})
     }
