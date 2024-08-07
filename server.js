@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
-const PORT = process.env.PORT || 5050
+const PORT = process.env.PORT
 
 
 const apiRouter = express.Router();
