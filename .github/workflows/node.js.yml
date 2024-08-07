@@ -26,5 +26,5 @@ jobs:
       - run: npm ci
       - run: |
           touch .env
-          echo "{{secrets.CICD_SECRET}}" > .env
+          echo "${{secrets.CICD_SECRET}}" > .env
       - run: pm2 restart cicd
