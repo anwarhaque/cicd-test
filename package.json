@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "name": "cicd-test",
+  "version": "1.0.0",
+  "description": "ci/cd test",
+  "main": "server.js",
+  "author": "anwar",
+  "license": "ISC"
+}
