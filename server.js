@@ -8,18 +8,18 @@ const PORT = process.env.PORT
 const apiRouter = express.Router();
 
 
-apiRouter.get('/api', (req, res)=>{
+apiRouter.get('/api', (req, res) => {
     try {
-        return res.status(200).json({message:'CICD API WORKING'})
+        return res.status(200).json({ message: 'data fetched', user: { name: "Anwarul Haque", age: 27 } })
     } catch (error) {
-        return res.status(500).json({message:error.message})
+        return res.status(500).json({ message: error.message })
     }
 })
 
 
 app.use('/cicd', apiRouter);
 
-app.listen(PORT, ()=>{
+app.listen(PORT, () => {
     console.log(`server running on http://localhost:${PORT}`);
-    
+
 })
